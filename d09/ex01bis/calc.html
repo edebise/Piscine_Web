@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc.jQuery</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var time = timer();
+			// setInterval function set the interval at 30 secondes.
+			function timer()
+				{return(setInterval(function(){alert('Please, use me...');}, 30 * 1000));}
+			// Onclick id=submit.
+			$('#submit').click(function(){
+				// clearInterval function unset the interval.
+				clearInterval(time);
+				var first = $('#first').val();
+				var ope = $('#ope').val();
+				var second = $('#second').val();
+				var one = parseInt(first);
+				var two = parseInt(second);
+				var result = 'Error :(';
+				var regex = /^\s*[+-]?(\d+|0x[\da-f]+)\s*$/i;
+				if (regex.test(first) && regex.test(second) && /^[-+*/%]$/.test(ope)
+				&& (first = parseInt(first)) >= 0 && (second = parseInt(second)) >= 0) {
+					if (ope == '+')
+						result = first + second;
+					else if (ope == '-')
+						result = first - second;
+					else if (ope == '*')
+						result = first * second;
+					else if (!second)
+						result = "It's over 9000!";
+					else if (ope == '/')
+						result = first / second;
+					else if (ope == '%')
+						result = first % second;
+					console.log(result);
+				}
+				alert(result);
+				time = timer();
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="first" style="margin-left:40%;">
+	<select id="ope">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option></select>
+	<input type="text" id="second">
+	<input type="submit" id="submit" value="Try me!">
+</body>
+</html>

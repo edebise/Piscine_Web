@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon.jQuery</title>
+	<style type="text/css">
+		#test {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			background-color: red;
+			margin: auto;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var size = 200;
+			var color = 0;
+			$('#test').click( function(){set(+10);} ).mouseout( function(){set(-5);} );
+			function set( way ) {
+				size += way;
+				color += way > 0 ? 1 : -1;
+				size < 200 || size > 420 ? size = 200 : 0;
+				color < 0 ? color = 2 : 0;
+				color > 2 ? color = 0 : 0;
+				if (color == 0)
+					$('#test').css('background-color', 'red');
+				else if (color == 1)
+					$('#test').css('background-color', 'green');
+				else if (color == 2)
+					$('#test').css('background-color', 'blue');
+				$('#test').css({'width': size + 'px', 'height': size + 'px', 'border-radius': size / 2 + 'px'});
+			}
+		});
+	</script>
+</head>
+
+<body>
+	<div id="test"></div>
+</body>
+</html>

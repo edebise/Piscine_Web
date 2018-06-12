@@ -1,0 +1,16 @@
+id;name;price;img;category;describe
+1;One;10;https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/ONE_Campaign.svg/300px-ONE_Campaign.svg.png;1;Ceci est le chiffre 'un'. Voici la description : 1.<br>Ligne.
+2;Two;20;http://www.clker.com/cliparts/E/x/J/x/m/z/blue-number-two-hi.png;2;Ceci est le chiffre 'deux'.
+3;Three;30;http://icons.iconarchive.com/icons/icons8/ios7/512/Hands-Three-Fingers-icon.png;1;Ceci est le chiffre 'trois'.
+4;Four;40;http://lire-ecrire-compter.com/wp-content/uploads/2017/09/quatre.png;2;Quatre
+5;Five;50;https://cdn0.iconfinder.com/data/icons/HTML5/512/HTML_Logo.png;1;Cinq
+6;Six;60;https://i.pinimg.com/originals/b4/7e/40/b47e405fcc4a92e413f769f8d680193f.png;2;
+7;Seven;70;https://upload.wikimedia.org/wikipedia/commons/e/e0/7Sport_Logo.png;1;
+8;Eight;80;http://www.clker.com/cliparts/a/4/4/9/12370998112143206469nicubunu_Eight_ball.svg.hi.png;2;
+9;Nine;90;http://miam-images.m.i.pic.centerblog.net/bc076e94.png;1;
+10;Ten;100;https://vignette.wikia.nocookie.net/logopedia/images/8/88/Ten_2013-.png/revision/latest?cb=20170130043854;2;Ceci est le nombre 'Dix'.
+11;Eleven;110;https://png.icons8.com/ios-glyphs/1600/timezone-11.png;1;
+12;Twelve;120;https://qph.fs.quoracdn.net/main-qimg-55f07ae9a975a047d5855093ada08650;1;
+13;Thirteen;130;https://png.icons8.com/metro/1600/calendar-13.png;1;
+14;Fourteen;140;https://i.pinimg.com/originals/05/e2/b1/05e2b135fe1f5db348dc6f896bd5b698.jpg;2;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+15;Fifteen;150;https://www.shareicon.net/data/512x512/2015/09/20/643782_15_512x512.png;1;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

@@ -1,0 +1,15 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles screen particulars.
+
+An instance must be contructed with x, y, z values:
+new Vertex( array( 'x' => 1, 'y' => 2, 'z' => 3 ) );
+
+w value can be added (default:1.0):
+new Vertex( array( 'x' => 1, 'y' => 2, 'z' => 3, 'w' => 1.5 ) );
+
+color instance of Color.class can be added (default:0xffffff):
+new Vertex( array( 'x' => 1, 'y' => 2, 'z' => 3, 'color' => $newColor ) );
+
+x, y, x, w constitutives are converted to floats.
+---------------------------------------------------------------------- Vertex ->

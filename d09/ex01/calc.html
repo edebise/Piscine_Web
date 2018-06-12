@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc.js</title>
+	<script type="text/javascript">
+		var time = timer();
+		function timer() {
+			return(setInterval(function(){alert('Please, use me...');}, 30 * 1000));}
+		function calcul() {
+			clearInterval(time);
+			var left = document.getElementById('left').value;
+			var ope = document.getElementById('ope').value;
+			var right = document.getElementById('right').value;
+			var regex = /^\s*[+-]?(\d+|0x[\da-f]+)\s*$/i;
+			if (regex.test(left) && regex.test(right) && /^[-+*/%]$/.test(ope)
+			&& (left = parseInt(left)) >= 0 && (right = parseInt(right)) >= 0) {
+				if (ope == '+')
+					result = left + right;
+				else if (ope == '-')
+					result = left - right;
+				else if (ope == '*')
+					result = left * right;
+				else if (!right)
+					result = "It's over 9000!";
+				else if (ope == '/')
+					result = left / right;
+				else if (ope == '%')
+					result = left % right;
+				console.log(result);
+				alert(result);
+			}
+			else
+				alert('Error :(');
+			time = timer();
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="left" style="margin-left:40%;">
+	<select id="ope">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+		<option value="%">%</option></select>
+	<input type="text" id="right">
+	<input type="submit" value="Try me!" onclick="calcul()">
+</body>
+</html>

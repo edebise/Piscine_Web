@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html><head>
+	<meta charset="utf-8">
+	<meta name="author" content="edebise">
+	<meta name="description" content="Piscine_PHP/D00/ex05">
+	<title>Scumm</title>
+	<link rel="stylesheet" type="text/css" href="scumm.css">
+</head>
+
+<body>
+
+<header class="round">
+	<img id="doft42" src="resources/day_of_the_42.png" alt="Day of the 42" title="Day of the 42">
+	<div id="top_right">
+		<a href="scumm.html"><img id="reload" src="resources/reload.png" alt="Reload" title="Recommencer au début"></a>
+		<a href="scumm_outing.html"><img src="resources/close.gif" alt="Close" title="Déconnecter"></a>
+	</div>
+	<img id="glass" src="resources/loupe.png" alt="Loupe" title="Magnifying glass">
+</header>
+
+<main>
+	<div id=side class="round">
+		<a href="scumm_arrow.html"><img class="object" src="resources/arrow.png" alt="Avancer" title="Avancer"></a>
+		<a href="scumm.html"><img class="red object" src="resources/main.png" alt="Prendre" title="Prendre"></a>
+		<a href="scumm_oeil.html"><img class="object" src="resources/oeil.png" alt="Regarder" title="Regarder"></a>
+		<a href="scumm_outil.html"><img class="object" src="resources/outil.png" alt="Utiliser" title="Utiliser"></a>
+		<a href="scumm_chat.html"><img class="object" src="resources/chat-icon.png" alt="Parler" title="Parler"></a>
+	</div>
+	<div id=center class="round">
+		<img src="resources/cluster.jpg" alt="Cluster" title="Cluster" usemap="#mapping">
+		<map name="mapping">
+			<area shape="rect" title="School" href="scumm_1.html" coords="0,0,512,288">
+			<area shape="rect" title="Boss" href="scumm_2.html" coords="513,0,1025,288">
+			<area shape="rect" title="Cluster_us" href="scumm_3.html" coords="0,289,512,577">
+			<area shape="rect" title="Computer" href="scumm_4.html" coords="512,288,1025,577">
+	</div>	
+	<div id=side class="round">
+		<a href="scumm_book.html"><img class="object" src="resources/book.png" alt="Book" title="Book"></a>
+		<a href="scumm_towel.html"><img class="object" src="resources/towel.png" alt="Towel" title="Towel"></a>
+		<div id="brick" title="Bricks"></div>
+	</div>
+	<div id="dialog" class="round" title="Dialog">
+		<p>Vous <span id="entrez">entrez</span> alors dans une grande piece remplie d'<span id="ordi">ordinateurs</span>...
+		<br/>
+		<i>- Bonjour, vous êtes nouveau ici ?</i></p>
+		<form action="scumm_submit_0.html">
+			<input type="text" name="Input" size="65" autocomplete="off">
+			<input type="submit" value="Repondre">
+		</form>
+	</div>
+</main>
+
+</body></html>

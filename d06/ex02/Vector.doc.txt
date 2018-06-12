@@ -1,0 +1,41 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class handles 3D vectors with optional 'w'
+
+An instance can be contructed from 1 or 2 Vertex values (only 'dest' in needed):
+new Vector( array( 'dest' => new Vertex(...) ) );
+new Vector( array( 'dest' => new Vertex(...), 'orig' => new Vertex(...) ) );
+
+If 'dest' or 'orig' have a 'w' value, a 'w' will be set in Vector,
+otherwise it will be set at 0.0.
+
+The class provides the following methods :
+
+float    magnitude();
+Returns the length (or 'norme') of the Vector
+
+Vector   normalize();
+Normalizes each Vector constitutive.
+If it's allready done, it returns a new Vector instance.
+
+Vector   add( Vector $rhs );
+Adds each Vector constitutive and returns a new Vector instance.
+
+Vector   sub( Vector $rhs );
+Subs each Vector constitutive and returns a new Vector instance.
+
+Vector   opposite();
+Opposites each Vector constitutive and returns a new Vector instance.
+
+Vector   scalarProduct( $k );
+Returns the product of the Vector with a scalar ($k) in a new instance.
+
+float    dotProduct( Vector $rhs );
+Returns the scalar product of two Vector.
+
+float    cos( Vector $rhs );
+Returns the cossinus value of two Vector.
+
+Vector   crossProduct( Vector $rhs );
+Returns the cross product af two Vector (right hand sight) in a new instance.
+---------------------------------------------------------------------- Vector ->

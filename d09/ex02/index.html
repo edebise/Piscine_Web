@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>to_do_list.js</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="todo.js"></script>
+	<style type="text/css">
+		#ft_list	{
+			float: left;
+			width: 50%;
+			min-height: 1px;
+		}
+		#ft_list div	{
+			margin-bottom: 5px;
+			padding: 5px;
+			background-color: powderblue;
+		}
+		button	{
+			margin-left: 20px;
+			padding: 5px 20px;
+		}
+	</style>
+</head>
+<body onload="cook_load()">
+	<div id="ft_list"></div>
+	<button onclick="get_todo()" autofocus="true"> New </button>
+</body>
+</html>

@@ -1,0 +1,51 @@
+body {
+	background-color: #cccccc;
+	text-align: center;
+	font: 200% arial;
+}
+img {
+	max-width: 100%;
+}
+table {
+	border-spacing: 2px;
+	margin: 10px auto;
+}
+td {
+	position: relative;
+	font: 1.2vw arial;
+	height: 4.5ex;
+	width: 60px;
+}
+.mass {
+	position: absolute;
+	text-align: right;
+	font-size: 0.5vw;
+	padding: 1px;
+	right: 0;
+	top: 0;
+}
+.num {
+	position: absolute;
+	text-align: left;
+	font-size: 0.5vw;
+	padding: 1px;
+	bottom: 0;
+	left: 0;
+}
+.legend {
+	font-size: 0.5vw;
+	padding: 2px;
+	width: 100px;
+	height: 2ex;
+}
+.acti	{background-color: #aeeaae;}
+.halo	{background-color: #ff99f8;}
+.lant	{background-color: #c2efc2;}
+.m_alc	{background-color: #ffc299;}
+.m_al_tr{background-color: #ffd599;}
+.m_oid	{background-color: #9ae59a;}
+.m_oth	{background-color: #ffff99;}
+.m_tra	{background-color: #ddff99;}
+.nobl	{background-color: #99d6ff;}
+.non_m	{background-color: #bb99ff;}
+.uknn	{background-color: #b0b0b0;}

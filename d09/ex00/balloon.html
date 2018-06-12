@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Balloon.js</title>
+	<style type="text/css">
+		#balloon {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+			background-color: red;
+			margin: auto;
+		}
+	</style>
+	<script type="text/javascript">
+		var size = 200;
+		var color = 0;
+		function set( way )
+		{
+			size += way > 0 ? 10 : -5;
+			color += way > 0 ? 1 : -1;
+			size < 200 || size > 420 ? size = 200 : 0;
+			color < 0 ? color = 2 : 0;
+			color > 2 ? color = 0 : 0;
+			elem = document.getElementById('balloon');
+			if (color == 0)
+				elem.style.backgroundColor = 'red';
+			else if (color == 1)
+				elem.style.backgroundColor = 'green';
+			else if (color == 2)
+				elem.style.backgroundColor = 'blue';
+			elem.style.width = elem.style.height = size + 'px';
+			elem.style.borderRadius = size / 2 + 'px';
+		}
+	</script>
+</head>
+
+<body>
+	<div id="balloon" onclick="set( +1 )" onmouseout="set( -1 )"></div>
+</body>
+</html>
